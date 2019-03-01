@@ -1,37 +1,11 @@
 import React, { Component } from "react";
-// import SweetAlert from "react-bootstrap-sweetalert";
 import Alert from "./Alert";
 
 // destructuring
 class ListItem extends Component {
   state = {
-    // alert: null // initialising an empty alert
     alertVisible: false
   };
-
-  // showAlert() {
-  //   const getAlert = () => (
-  //     <SweetAlert
-  //       customClass="sweetalert"
-  //       title={this.props.photo.description}
-  //       confirmBtnText="Close window"
-  //       confirmBtnBsStyle="info"
-  //       onConfirm={() => this.closeAlert()}
-  //     >
-  //       <img src={this.props.photo.urls.small} alt={this.props.photo.id} />
-  //     </SweetAlert>
-  //   );
-
-  //   this.setState({
-  //     alert: getAlert() // Fires up the dialog box
-  //   });
-  // }
-
-  // closeAlert() {
-  //   this.setState({
-  //     alert: null // colses the dialog window
-  //   });
-  // }
 
   changeAlertVisibility = () => {
     console.log("Click");
@@ -73,8 +47,6 @@ class ListItem extends Component {
             </a>
           </div>
         </div>
-        {/* {this.state.alert} */}
-
         {this.state.alertVisible ? (
           <Alert
             photoDesc={this.props.photo.description}

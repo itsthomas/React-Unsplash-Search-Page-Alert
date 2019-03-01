@@ -34,7 +34,7 @@ class Alert extends Component {
 
   closeAlert() {
     this.setState({
-      alert: null // This will colse the dialog window
+      alert: null // Colsesthe dialog window
     });
   }
 
