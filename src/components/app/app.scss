@@ -3,49 +3,49 @@
 }
 
 body {
-  margin: 0;
   background-color: #4d4e4f;
   display: flex;
   justify-content: center;
+  margin: 0;
   padding: 20px 0;
 }
 
 #root {
-  width: 100%;
   max-width: 1280px;
+  width: 100%;
 }
 
 .header {
-  width: 50%;
+  color: #fff;
   margin: 0 auto;
   text-align: center;
-  color: #fff;
+  width: 50%;
 }
 
 .grid {
-  width: 100%;
-  max-width: 1280px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 0;
+  justify-content: space-between;
   list-style-type: none;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0;
+  width: 100%;
 }
 
 .grid__item {
-  margin: 0 10px 20px;
   flex: 1 1 290px;
+  margin: 0 10px 20px;
 }
 
 /* Фотокарточки */
 .card {
   background-color: #fff;
-  overflow: hidden;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
-  line-height: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  line-height: 0;
+  overflow: hidden;
 }
 
 .card:hover {
@@ -53,42 +53,42 @@ body {
 }
 
 .card__body {
-  width: 100%;
+  background-color: #eee;
   height: 215px;
   overflow: hidden;
-  background-color: #eee;
+  width: 100%;
 }
 
 .card__body img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
+  width: 100%;
 }
 
 .card__footer {
-  width: 100%;
   padding: 10px 15px;
+  width: 100%;
 }
 
 .media__obj {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
   background-color: #d8d8d8;
-  margin-right: 15px;
+  border-radius: 50%;
   float: left;
+  height: 32px;
+  margin-right: 15px;
+  width: 32px;
 }
 
 .media__body {
-  width: 100%;
   height: 32px;
   line-height: 32px;
+  width: 100%;
 }
 
 .media__body a {
+  color: #999;
   font-family: Courier, serif;
   font-size: 15px;
-  color: #999;
 }
 
 .media__body a:hover {
@@ -99,8 +99,8 @@ body {
       Sweet Alert
 ============================= */
 .sweet-alert {
-  top: 32% !important;
   max-height: 620px !important;
+  top: 32% !important;
 
   h2 {
     font-size: 1.6rem;
@@ -116,13 +116,13 @@ body {
           PAGINATION
 ============================= */
 .pagination {
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 100%;
-  padding: 0 4px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 4px;
+  width: 100%;
 }
 
 .pagination__left,
@@ -132,23 +132,23 @@ body {
 }
 
 .pagination span[role="button"] {
-  display: block;
-  text-align: center;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  line-height: 42px;
-  height: 44px;
-  color: #999;
-  font-size: 18px;
-  padding: 0 5px;
-  max-width: 160px;
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid #ccc;
-  text-decoration: none;
-  margin: 0 6px;
-  transition: all 0.2s ease-in-out;
+  color: #999;
   cursor: pointer;
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  height: 44px;
+  line-height: 42px;
+  margin: 0 6px;
+  max-width: 160px;
+  padding: 0 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
 
   &:hover,
   &.current {
@@ -162,15 +162,15 @@ body {
 }
 
 .pagination__mid {
-  margin: 0 auto;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .pagination__mid ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .pagination__mid li {
@@ -185,24 +185,24 @@ body {
             LOADER
 ============================= */
 .loader {
-  position: fixed;
-  z-index: 9;
-  top: 0;
   bottom: 0;
   left: 0;
+  position: fixed;
   right: 0;
+  top: 0;
+  z-index: 9;
   /*   position: relative; */
 }
 
 .loader::before,
 .loader::after {
-  content: "";
-  position: absolute;
-  top: 0;
   bottom: 0;
+  content: "";
   left: 0;
-  right: 0;
   margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .loader::before {
@@ -210,14 +210,14 @@ body {
 }
 
 .loader::after {
+  animation: spinner 1s linear infinite;
+  border-radius: 50%;
+  border-top-color: #ea4c89;
+  border: 2px solid #ccc;
   content: "";
   font-size: 48px;
-  width: 1em;
   height: 1em;
-  border: 2px solid #ccc;
-  border-top-color: #ea4c89;
-  border-radius: 50%;
-  animation: spinner 1s linear infinite;
+  width: 1em;
 }
 
 @keyframes spinner {
