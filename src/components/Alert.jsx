@@ -11,8 +11,11 @@ class Alert extends Component {
 
   componentDidMount() {
     this.showAlert();
-    // console.log(this.props);
   }
+
+  onClose = () => {
+    this.props.onClose(this.state.alertVisible);
+  };
 
   showAlert() {
     const getAlert = () => (
@@ -36,6 +39,7 @@ class Alert extends Component {
     this.setState({
       alert: null // Colsesthe dialog window
     });
+    this.onClose();
   }
 
   render() {
